@@ -39,7 +39,7 @@ public class NotesFragment extends Fragment {
 
         for(int i=0; i < notes_name.length; i++){
             String note = notes_name[i];
-            TextView textView = new TextView(getContext());
+            TextView textView = new TextView(getContext(),null,0,R.style.menu_style);
             textView.setText(note);
             textView.setTextSize(30);
             layoutView.addView(textView);
